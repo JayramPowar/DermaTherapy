@@ -12,7 +12,7 @@ const DetectCond = () => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              api_key: 'lGuDxZ2LeV6f8SZcwHS9',
+              api_key: 'GEMINNI_API_KEY',
               inputs: {
                 image: {
                   type: 'url',
