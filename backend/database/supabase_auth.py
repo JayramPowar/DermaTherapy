@@ -1,7 +1,7 @@
 import jwt # type: ignore
 import os
 
-SUPABASE_JWT_SECRET = os.getenv("ANlrgb2SPVoVNLB4wdD94Yln2SZx3/yW1g9dwDtXMNxNYpWNvNdi5zuj+PrdjBV/kj3gKOOZRDfft/n11i6QqQ==")
+SUPABASE_JWT_SECRET = os.getenv("SUPABASE-SECRET-KEY")
 
 def verify_token(token):
     try:
