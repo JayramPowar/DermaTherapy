@@ -23,7 +23,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Initialize DB and Gemini
 db = UserDBHandler()
-api_key = os.getenv("GEMINI_API_KEY") or "AIzaSyBuDyPKMRly-CYHRm43-GqOXKWJeMME0UM"
+api_key = os.getenv("GEMINI_API_KEY") or "ENTER-YOUR-KEY-HERE"
 model = genai.Client(api_key=api_key)
 
 
@@ -164,25 +164,25 @@ def getResult(api_key, workspace_name, workflow_id, image_path):
 def predictSub(meta_class, img_path):
     configs = {
         "Acne": {
-            "api_key": "lGuDxZ2LeV6f8SZcwHS9",
+            "api_key": "ACNE-KEY",
             "workspace_name": "eczema-veixh",
             "workflow_id": "custom-workflow-29",
             "api_url": "https://serverless.roboflow.com"
         },
         "Eczema": {
-            "api_key": "PWPI0pRFEhoK1qVt2Aag",
+            "api_key": "ECZEMA-KEY",
             "workspace_name": "eczema-dataset",
             "workflow_id": "custom-workflow-33",
             "api_url": "https://detect.roboflow.com"
         },
         "Melasma": {
-            "api_key": "lGuDxZ2LeV6f8SZcwHS9",
+            "api_key": "MELASMA-KEY",
             "workspace_name": "eczema-veixh",
             "workflow_id": "custom-workflow-30",
             "api_url": "https://serverless.roboflow.com"
         },
         "Tinea": {
-            "api_key": "lGuDxZ2LeV6f8SZcwHS9",
+            "api_key": "TINEA-KEY",
             "workspace_name": "eczema-veixh",
             "workflow_id": "custom-workflow-31",
             "api_url": "https://serverless.roboflow.com"

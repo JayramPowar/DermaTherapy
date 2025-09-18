@@ -38,7 +38,7 @@ export default async function handler(req, res) {
 
     // Make the API request to Roboflow
     const apiResponse = await fetch(
-      'https://detect.roboflow.com/eczema-veixh/custom-workflow-26?api_key=lGuDxZ2LeV6f8SZcwHS9',
+      'roboflow-model-api-link',
       {
         method: 'POST',
         body: formData,
