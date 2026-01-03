@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --watch --env-file=.env index.js",
     "dev": "node --watch --env-file=.env index.js",
-    "start": "node --watch --env-file=.env index.js"
+    "start": "node --watch --env-file=.env index.js",
+    "build": "npm install --legacy-peer-deps"
   },
   "repository": {
     "type": "git",
