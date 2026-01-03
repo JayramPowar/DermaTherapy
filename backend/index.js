@@ -1,14 +1,19 @@
-import { app } from "./app/app.js"
+import { app } from "./app/app.js";
 import { connectDB } from "./app/config/connect.js";
-import { PORT } from "./app/schema/portSchema.js";
+
+const PORT = process.env.PORT || 3000;
 
 const startServer = async () => {
+  try {
     await connectDB();
-    // Start the server and listen on the specified port
+
     app.listen(PORT, () => {
-        console.log(`Server is running at port: ${PORT}`);
-        console.log(`Visit at: http://localhost:${PORT}`);
+      console.log(`✅ Server running on port ${PORT}`);
     });
+  } catch (error) {
+    console.error("❌ Failed to start server:", error);
+    process.exit(1);
+  }
 };
 
 startServer();
